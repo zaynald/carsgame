@@ -1,0 +1,89 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://imgs/restartm.png" type="Texture" id=2]
+[ext_resource path="res://imgs/tobol1.png" type="Texture" id=3]
+[ext_resource path="res://imgs/tobol3.png" type="Texture" id=4]
+
+[node name="Control" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+script/script = ExtResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+
+visibility/opacity = 0.5
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 29.0
+margin/top = 28.0
+margin/right = 111.0
+margin/bottom = 103.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 2 )
+params/scale = Vector2( 0.5, 0.5 )
+
+[node name="TextureButton 2" type="TextureButton" parent="."]
+
+visibility/opacity = 0.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 543.0
+margin/top = 40.0
+margin/right = 752.0
+margin/bottom = 233.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+
+[node name="TextureButton 3" type="TextureButton" parent="."]
+
+visibility/opacity = 0.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 554.0
+margin/top = 272.0
+margin/right = 752.0
+margin/bottom = 463.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+
+[node name="TextureButton 4" type="TextureButton" parent="."]
+
+visibility/opacity = 0.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 24.0
+margin/top = 279.0
+margin/right = 207.0
+margin/bottom = 458.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+
+[connection signal="pressed" from="TextureButton 2" to="." method="_on_TextureButton_2_pressed"]
+
+[connection signal="pressed" from="TextureButton 3" to="." method="_on_TextureButton_3_pressed"]
+
+[connection signal="pressed" from="TextureButton 4" to="." method="_on_TextureButton_4_pressed"]
+
+
