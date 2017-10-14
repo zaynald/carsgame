@@ -4,16 +4,19 @@ sample godot engine
 
 have 2 type car, you can add more if you can
 
+# How to Play
+use arrow up and right to get more power.
+left arrow to run back or brake the cars
+
 
 
 
 
 # Screenshot
-
+![Preview image](https://github.com/zaynald/carsgame/blob/master/car1menu.png)
 ![Preview image](https://github.com/zaynald/carsgame/blob/master/car1BG.png)
 ![Preview image](https://github.com/zaynald/carsgame/blob/master/car1bajaj.png)
 ![Preview image](https://github.com/zaynald/carsgame/blob/master/car1bajajbg.png)
-https://github.com/zaynald/carsgame/blob/master/car1menu.png
 
 ## Github Games/Projects from other Godot users:
 - [3rd person controller](https://github.com/khairul169/3rdperson-godot)
